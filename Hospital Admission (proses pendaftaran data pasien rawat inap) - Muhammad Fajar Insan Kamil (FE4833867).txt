@@ -1,10 +1,6 @@
 // Hospital Admission (proses pendaftaran data pasien rawat inap) 
 // Muhammad Fajar Insan Kamil (FE4833867)
 
-// Pseudecode Hospital Admission (proses pendaftaran data pasien rawat inap)
-// Muhammad Fajar Insan Kamil - FE4833867
-
-
 START
     PRINT "Welcome to Hospital Admission System"
     PRINT "Please enter patient information: "
