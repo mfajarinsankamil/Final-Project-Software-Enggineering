@@ -1,0 +1,43 @@
+// Hospital Admission (proses pendaftaran data pasien rawat inap) 
+// Muhammad Fajar Insan Kamil (FE4833867)
+
+// Pseudecode Hospital Admission (proses pendaftaran data pasien rawat inap)
+// Muhammad Fajar Insan Kamil - FE4833867
+
+
+START
+    PRINT "Welcome to Hospital Admission System"
+    PRINT "Please enter patient information: "
+    INPUT patient_name
+    INPUT patient_age
+    INPUT patient_address
+    
+    IF patient_age < 18 DO
+        PRINT "Sorry, patients under 18 years old cannot be admitted."
+    ELSE
+        PRINT "Patient information:"
+        PRINT "Name: " + patient_name
+        PRINT "Age: " + patient_age
+        PRINT "Address: " + patient_address
+        
+        PRINT "Please select room type: "
+        PRINT "1. Standard"
+        PRINT "2. VIP"
+        INPUT room_type
+        
+        WHILE room_type != 1 AND room_type != 2 DO
+            PRINT "Invalid input. Please select room type: "
+            PRINT "1. Standard"
+            PRINT "2. VIP"
+            INPUT room_type
+        END WHILE
+        
+        IF room_type == 1 DO
+            PRINT "You have selected Standard room."
+        ELSE
+            PRINT "You have selected VIP room."
+        END IF
+        
+        PRINT "Thank you for using our system!"
+    END IF
+END
